@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora Fisica</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert2.css">
+	<link href="diseño.css" rel="stylesheet">
+	<script type="text/javascript" src="funcion.js"></script>
+</head>
+<body>
+ 
+<!-- titulo -->
+<div class="alert alert-primary" role="alert">
+  <h1 class="display-4 text-center"> Calculadora </h1>
+</div>
+
+<div class="formularioP">
+
+<form class="Preguntas">
+	
+	<!-- titulo de formulario-->
+		<h4 class=" titulo text-center font-weight-bold"><u>Movimiento Rectilineo Uniforme</u> <span class="badge badge-secondary">(MRU)</span></h4>
+		<small id=" " class="Titulito form-text text-center font-weight-bold">Si no conoces alguno de estos datos deja el espacio <u>vacio</u></small>
+		
+	<div class="form-group">
+		<label for="X0">Posicion final (X)</label>
+		<input type="number" class="form-control" id="PosFINAL" aria-describedby="PosXo" placeholder="posicion inicial">
+		<small id=" " class="form-text text-muted">indica cual es la posicion final en metros (m) </small>
+	</div> 	
+	
+	<div class="form-group">
+		<label for="X0">Posicion inicial (Xo)</label>
+		<input type="number" class="form-control" id="PosINICIAL" aria-describedby="PosXo" placeholder="posicion inicial">
+		<small id=" " class="form-text text-muted">indica cual es la posicion inicial (tiempo=0) en metros (m) </small>
+	</div>
+	
+	<div class="form-group">
+		<label for="">Velocidad</label>
+		<input type="number" class="form-control" id="Velocidad" placeholder="Velocidad">
+		<small id="Veldescription" class="form-text text-muted">indica cual es la velocidad del objeto, en metros sobre segundos (m/s)</small>
+	</div>
+	
+	<div class="form-group">
+		<label for="">Tiempo</label>
+		<input type="number" class="form-control" id="Tiempo" placeholder="Tiempo transcurrido">
+		<small id="Veldescription" class="form-text text-muted">indica cual es el tiempo que transcurrio en segundos (s)</small>
+	</div>
+	
+	<div class="formula form-group ">
+		<h3> <span class="badge badge-secondary"> X = X<small>o</small> + VT</span></h3>
+		<small id="Veldescription" class="form-text text-muted"> Formula MRU</small>
+	</div>
+		
+  <button onclick="validador()" type="button" class="btn btn-primary">Calcular</button>
+</form>
+
+</div>
+
+</body>
+</html>

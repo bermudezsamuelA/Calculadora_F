@@ -1,0 +1,37 @@
+html {
+  font-size: 100%; /* 100% = 16px */
+}
+
+
+body {
+	
+  margin: 0;
+  padding: 0;
+}
+
+.formularioP{
+	display: flex;
+	align-content:center ;
+  	justify-content:  center;
+	align-items:  stretch;
+}
+
+.Preguntas{
+	padding: 1rem;
+	border: 0.5rem dashed #819FF7;
+	border-radius: 1rem;
+	border-spacing: 1rem;
+	
+}
+
+.Titulito{
+	margin-bottom: 1rem;
+}
+
+.formula{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	  align-items:  center;
+
+}
